@@ -51,6 +51,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+# Pixel Launcher
+PRODUCT_PACKAGES += \
+    PixelLauncher
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -74,3 +78,4 @@ PRODUCT_PACKAGES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/whyred/whyred-vendor.mk)
+
